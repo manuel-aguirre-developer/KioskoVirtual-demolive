@@ -1,6 +1,6 @@
 // 🎮 DEMO MODE
-const BASE_URL = window.location.origin;
-const WS_URL = "ws://mock";
+const BASE_URL = "https://kioskovirtual-demolive.zya.me";
+const WS_URL = "wss://kioskovirtual-demolive.zya.me/ws";
 
 window.addEventListener('DOMContentLoaded', () => {
   // Primero intento obtener sesión y datos de usuario logueado

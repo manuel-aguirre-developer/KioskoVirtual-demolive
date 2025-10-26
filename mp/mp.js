@@ -2,7 +2,7 @@
 async function conectarWebSocketConUsuario() {
   try {
     // Consultamos si el usuario está logueado y obtenemos su ID
-    const res = await fetch('http://138.219.42.29/client/login/obtener_usuario.php');
+    const res = await fetch('https://kioskovirtual-demolive.zya.me/client/login/obtener_usuario.php');
     const data = await res.json();
 
     if (!data.logueado || !data.id_usuario) {
