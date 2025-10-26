@@ -1,0 +1,30 @@
+# Backend (no necesario en demo)
+backend/
+adminK/
+*.php
+mock-backend.js
+
+# Variables de entorno
+.env
+.env.local
+
+# Base de datos
+bd/
+*.sql
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Cache
+.cache/

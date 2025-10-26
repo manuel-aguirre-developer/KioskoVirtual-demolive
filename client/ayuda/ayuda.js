@@ -1,3 +1,6 @@
+// 🎮 DEMO MODE
+const BASE_URL = window.location.origin;
+const WS_URL = "ws://mock";
 
 function abrirModal(tipo) {
   const modal = document.getElementById('modalInfo');

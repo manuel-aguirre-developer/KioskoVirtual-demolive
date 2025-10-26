@@ -1,5 +1,6 @@
-const BASE_URL = "http://localhost/kiosko";
-const WS_URL = "ws://localhost:3006/kiosko";
+// 🎮 DEMO MODE
+const BASE_URL = window.location.origin;
+const WS_URL = "ws://mock";
 
 verificarSesionYBaneo();  
 mostrarCarrito();

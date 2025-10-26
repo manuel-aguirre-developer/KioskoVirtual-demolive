@@ -1,5 +1,6 @@
-const BASE_URL = "http://localhost/kiosko";
-const WS_URL = "ws://localhost:3006/kiosko";
+// 🎮 DEMO MODE
+const BASE_URL = window.location.origin;
+const WS_URL = "ws://mock";
 
 const logo = document.getElementById("logo");
 const bienvenidoText = document.getElementById("bienvenido");
@@ -516,7 +517,7 @@ async function cargarCatalogo() {
       productoInfo.className = "producto-info cursor-pointer";
       productoInfo.innerHTML = `
         <div class="w-full h-48 overflow-hidden rounded-lg">
-          <img src="./${p.imagen}" alt="${p.nombre}" class="w-full h-full object-cover">
+          <img src="./${p.imagenes}" alt="${p.nombre}" class="w-full h-full object-cover">
         </div>
         <h3 class="nombre-producto text-lg font-semibold mt-2">${p.nombre}</h3>
         <p class="text-sm text-gray-600">Tipo: ${p.tipo}</p>
@@ -714,7 +715,7 @@ function mostrarProductos(lista) {
     productoInfo.className = "producto-info cursor-pointer";
     productoInfo.innerHTML = `
       <div class="w-full h-48 overflow-hidden rounded-lg">
-        <img src="./${p.imagen}" alt="${p.nombre}" class="w-full h-full object-cover">
+        <img src="./${p.imagenes}" alt="${p.nombre}" class="w-full h-full object-cover">
       </div>
       <h3 class="text-lg font-semibold mt-2">${p.nombre}</h3>
       <p class="text-sm text-gray-600">Tipo: ${p.tipo}</p>
@@ -769,6 +770,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await cargarCatalogo();
   actualizarContadorCarrito();
 }); 
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
     try {
