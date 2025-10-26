@@ -575,7 +575,7 @@ async function cargarCatalogo() {
 document.getElementById('verMas').addEventListener('click', cargarCatalogo);
 
 function irAlCarrito() {
-  window.location.href = "client/carrito/carrito.html";
+  window.location.href = "./client/carrito/carrito.html";
 }
 
 function agregarAlCarrito(id, nombre, precio) {
