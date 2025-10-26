@@ -14,7 +14,8 @@ Este repositorio contiene una **versión de demostración** del proyecto Kiosko 
 
 ---
 
-## Contacto
+## Contactos
 
-Manuel Aguirre – [GitHub](https://github.com/manuel-aguirre-developer)
-Thiago Avalos – [GitHub](https://github.com/chuckytato)
+-Manuel Aguirre – [GitHub](https://github.com/manuel-aguirre-developer)
+
+-Thiago Avalos – [GitHub](https://github.com/chuckytato)
